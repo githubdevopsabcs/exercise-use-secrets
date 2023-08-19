@@ -35,7 +35,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       - name: custom action
-        uses: ./.github/actions/check-secrets-actions
+        uses: ./.github/actions/check-secrets-action
         with:
           secrets-context: ${{ secrets.GITHUB_TOKEN }}
           your-secret: ${{secrets.MY_REPO_SECRET}}
