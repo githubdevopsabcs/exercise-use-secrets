@@ -37,5 +37,5 @@ jobs:
       - name: custom action
         uses: ./.github/actions/check-secrets-action
         with:
-          secrets-context: ${{ secrets.GITHUB_TOKEN }}
+          #secrets-context: ${{ secrets.GITHUB_TOKEN }}
           your-secret: ${{secrets.MY_REPO_SECRET}}
